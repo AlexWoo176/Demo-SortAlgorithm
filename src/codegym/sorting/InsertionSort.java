@@ -12,12 +12,12 @@ public class InsertionSort {
     public int[] insertionSort(int arr[]) {
         for (int i = 1; i < arr.length; i++)
         {
-            int valueToSort = arr[i];
+            int template = arr[i];
             int j;
-            for ( j = i; j > 0 && arr[j - 1] > valueToSort; j--) {
+            for ( j = i; j > 0 && arr[j - 1] > template; j--) {
                 arr[j] = arr[j - 1];
             }
-            arr[j] = valueToSort;
+            arr[j] = template;
             System.out.print("Iteration "+(i)+": ");
             printArray(arr);
         }
